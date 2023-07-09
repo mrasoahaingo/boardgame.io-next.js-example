@@ -2,9 +2,9 @@
   "name": "with-typescript",
   "version": "1.0.0",
   "scripts": {
-    "dev": "ts-node --openssl-legacy-provider server.ts",
-    "build": "next --openssl-legacy-provider build",
-    "start": "next --openssl-legacy-provider start",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider ts-node server.ts",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
     "type-check": "tsc"
   },
   "dependencies": {
